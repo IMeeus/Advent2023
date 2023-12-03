@@ -1,6 +1,4 @@
-﻿// 10:20
-
-var lines = File.ReadAllLines("input.txt");
+﻿var lines = File.ReadAllLines("input.txt");
 
 Dictionary<(int x, int y), string> parts = [];
 List<(int x, int y)> symbols = [];
