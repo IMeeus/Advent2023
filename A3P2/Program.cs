@@ -49,7 +49,7 @@ foreach (var symbol in symbols.Keys)
         symbol.x <= part.x + parts[part].Length
     ).ToList();
 
-    if (nearParts.Count() == 2)
+    if (nearParts.Count == 2)
     {
         result += int.Parse(parts[nearParts[0]]) * int.Parse(parts[nearParts[1]]);
     }
