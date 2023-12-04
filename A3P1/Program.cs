@@ -1,4 +1,7 @@
-﻿var lines = File.ReadAllLines("input.txt");
+﻿using System.Diagnostics;
+
+var watch = Stopwatch.StartNew();
+var lines = File.ReadAllLines("input.txt");
 
 Dictionary<(int x, int y), string> parts = [];
 List<(int x, int y)> symbols = [];
@@ -54,3 +57,5 @@ foreach (var part in parts.Keys)
 }
 
 Console.WriteLine(result);
+watch.Stop();
+Console.WriteLine($"{watch.ElapsedMilliseconds}ms");
